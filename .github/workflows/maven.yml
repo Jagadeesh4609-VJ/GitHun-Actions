@@ -45,7 +45,7 @@ jobs:
 
       # 6. Deploy WAR via Tomcat Manager
       - name: Deploy to Tomcat
-        run: |
+        run: 
           WAR_FILE=$(ls *.war)
           echo "Deploying $WAR_FILE to Tomcat..."
           curl -v --upload-file "$WAR_FILE" \
